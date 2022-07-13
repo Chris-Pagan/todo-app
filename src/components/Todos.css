@@ -1,0 +1,78 @@
+.todos {
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    top: 90px;
+  }
+  
+  .todos__content {
+    border: 1px solid lightgray;
+    padding: 40px 200px;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+    z-index: 999;
+  }
+  .todos__todo {
+    max-height: 45vh;
+    overflow-y: scroll;
+  }
+  .todos__content h2 {
+    text-transform: uppercase;
+    margin: -10px 0 10px 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .todos__content .todos__forms {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .todos__content .todos__form .todos__input {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 6px;
+  }
+  
+  .todos__content .todos__forms .todos__add__btn {
+    border: none;
+    border-radius: 4px;
+    background: orange;
+    color: #112;
+    margin: 0 5px;
+    padding: 0 25px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+  }
+  .todos__content .todos__forms .todos__add__btn:hover {
+    border: none;
+    border-radius: 4px;
+    background: #112;
+    color: orange;
+    margin: 0 3px;
+  }
+  /* Media Queries */
+  @media (max-width: 800px) {
+    .todos__content {
+      padding: 40px 100px;
+    }
+  }
+  
+  @media (max-width: 590px) {
+    .todos__content {
+      padding: 40px 65px;
+    }
+  }
+  
+  @media (max-width: 560px) {
+    .todos__content {
+      padding: 40px 80px;
+    }
+  }
+  
+  @media (max-width: 560px) {
+    .todos__content {
+      padding: 40px 60px;
+    }
+  }
